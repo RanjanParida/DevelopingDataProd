@@ -10,7 +10,7 @@ shinyUI(pageWithSidebar(
         mainPanel(
                 p("The application is built for Developing Data Products class 
 from Coursera. This application allows an user to perform a calculation on 
-**Resultant Value** by pressing the **calculate** button in the left navigation 
+'Resultant Value' by pressing the 'calculate' button in the left navigation 
 panel using the value and operation entered by the user."),
                 
                 p("The user can reset the value of Resultant Value to ZERO 
@@ -19,11 +19,16 @@ panel using the value and operation entered by the user."),
                 h3("Resultant Value"),
                 textOutput("result"),
                 
-                h5("Server Code"),
-                imageOutput("img"),
+                h5("References"),
                 
-                a(href="http://rpubs.com/rparida/DDP_PA", "Course Presentation")
+                a(href="https://github.com/RanjanParida/DevelopingDataProd",
+                  "SourceCode"), p("On GITHUB"),
                 
+                a(href="http://rpubs.com/rparida/DDP_PA", 
+                  "Course Presentation"), p("On RPUBs"),
+                
+                h6("ServerCode Image"),
+                imageOutput("img")
 
         )
 ))
